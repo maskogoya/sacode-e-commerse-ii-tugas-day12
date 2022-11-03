@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Day12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="user hide-details" id="userBox">
+    <img src="img/454-image.png" onclick="openinfo()">
+    <div class="info">
+        <h1>John Smith</h1>
+        <p>Working as a product manager at <span> microsoft inc.</span></p>
+        <p>From : California, united states</p>
+        <a href="#">Conenect with me</a>
+    </div>
+    <div class="close-icon" onclick="closeinfo()"></div>
+</div>
+
+<script>
+
+let userBox = document.getElementById("userBox");
+
+function openinfo(){
+    userBox.classList.remove("hide-details")
+}
+function closeinfo(){
+    userBox.classList.remove.add("hide-details")
+}
+
+</script>
+
+
+</body>
+</html>
